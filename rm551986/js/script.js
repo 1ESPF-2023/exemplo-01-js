@@ -2,7 +2,8 @@
 
 //Declarando uma variável 
 
-var nome= "Pedro "
+var nome= "Gabriel"
+
 
 document.write("o valor da variável. ")
 document.write(nome)
