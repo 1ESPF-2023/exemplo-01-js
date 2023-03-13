@@ -1,2 +1,3 @@
-# exemplo-01-js
-Exemplo de variáveis Javascript
+## Exemplo de variáveis Javascript
+
+### Criação de variaáveis em Javascript
