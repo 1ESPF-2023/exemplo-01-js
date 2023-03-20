@@ -9,7 +9,7 @@ var nome = "Julio"
 //Realizando uma concanetação
 document.write("NOME : " + nome)
 if(nome != ""){
-    let nome = "Daniel"
+    let nome = "Daniela"
 }
 console.log("NOME : " + nome)
 
