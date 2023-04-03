@@ -24,5 +24,23 @@
 // var nome = "Rony"
 // }
 // console.log("Nome: " + nome)
-    
 
+//capturar o elemento atravez do id utilizando uma finção do 
+const h1Element = document.getElementById("meu-titulo");
+    
+//Atrelar ou adicionar  evento de click do mouse ao elemento
+h1Element.addEventListener("click",()=>{
+    alert("Agora com super poderes!")
+})
+
+//Altere a cor do fundo do elemento quando ocorrer a passagem do mouse sobre o elemento!
+//Coloque a cor de fundo na cor vermelha e a cor do texto na cor branca
+
+h1Element.addEventListener("mouseover",()=>{
+    h1Element.style.backgroundColor = '#ff0000';
+    h1Element.style.color = '#fff';
+})
+h1Element.addEventListener("mouseout",()=>{
+    h1Element.style.backgroundColor = '#fff';
+    h1Element.style.color = '#000000';
+})
