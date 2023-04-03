@@ -22,3 +22,8 @@ if(nome != ""){
 }
 
 console.log ("NOME : " + nome)
+
+//1 - Como declarar uma variável undefined em Javascript
+// let variável
+//console.log(variável)
+// <a href="https:www.fiap.com.br">Fiap</a>
