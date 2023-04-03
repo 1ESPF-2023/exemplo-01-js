@@ -1,28 +1,48 @@
-//Comentário de linha
-/**
- * Comentário de Bloco.
- */
-//Declarando uma variável e visualizando seu conteúdo.
-var nome = "Pedro"
+// //Comentário de linha
+// /**
+//  * Comentário de Bloco.
+//  */
+// //Declarando uma variável e visualizando seu conteúdo.
+// var nome = "Pedro"
 
-document.write("O valor da variável.")
-document.write("<br>")
-//Realizando concatenação
-document.write("NOME : " + nome)
+// document.write("O valor da variável.")
+// document.write("<br>")
+// //Realizando concatenação
+// document.write("NOME : " + nome)
 
-//Três tipos de dados iniciais do var
+// //Três tipos de dados iniciais do var
 
-//undefined
-var tipo1
-//Nulo
-var tipo2 = null
-//Vazio
-var tipo3 = ""
+// //undefined
+// var tipo1
+// //Nulo
+// var tipo2 = null
+// //Vazio
+// var tipo3 = ""
 
-//Problemas ao declarar tudo com var
-var nome = "Pedro"
+// //Problemas ao declarar tudo com var
+// var nome = "Pedro"
 
-if(nome !=""){
-    let nome = "Rony"
-}
-console.log("NOME : " + nome)
+// if(nome !=""){
+//     let nome = "Rony"
+// }
+// console.log("NOME : " + nome)
+
+//Capturar o elemento através do ID utilizando uma função do DOM
+const h1Element = document.getElementById("meu-titulo")
+
+//Atrelar ou adicionar o evento de click do mouse ao elemento.
+h1Element.addEventListener("click",()=>{
+    alert("Agora com superpoderes!")
+})
+
+//Altere a cor de fundo do elemento quando ocorrer a passagem do mouse sobre o elemento!
+//Coloque a cor de fundo na cor vermelha e a cor do texto na cor branca.
+h1Element.addEventListener("mouseover",()=>{
+    h1Element.style.backgroundColor ="#ff0000";
+    h1Element.style.color ="#fff";
+})
+
+h1Element.addEventListener("mouseout",()=>{
+    h1Element.style.backgroundColor = "#fff";
+    h1Element.style.color = "#000000"
+})
