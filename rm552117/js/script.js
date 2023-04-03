@@ -25,3 +25,9 @@ if(nome!=""){
 }
 
 console.log("Nome: "+nome)
+
+//CHECKPOINT!!!!!!!!!!!
+//Como declarar uma variável com valor undefined em JavaScript?Exemplifique e demonstre a saída do valor da variável.
+let variavel
+console.log(variavel)
+
