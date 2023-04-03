@@ -84,11 +84,34 @@ Operadores Relacionais:
 // }
 
 // Operação TERNÁRIA. A função "?"
-var num1 = 10;
-var num2 = 5;
-var resultado
+// var num1 = 10;
+// var num2 = 5;
+// var resultado
 
 // Utilizando o operação matemático (% de Módulo), vamos obter o resto da operação da divisão de num1 por num2, podendo descobrir se o número é par ou impar!
-resultado = !(num1%num2) ? "PAR" : "IMPAR";
+// resultado = !(num1%num2) ? "PAR" : "IMPAR";
 
-console.log("O valor calculado é :" + resultado);
+// console.log("O valor calculado é :" + resultado);
+
+// CAPTURAR O ELEMENTO ATRAVÉS DO ID UTILIZANDO UMA FUNÇÃO DO DOM
+const h1Element = document.getElementById("meu-titulo");
+
+// Atrelar ou adicionar o evento de click do mouse ao elemento.
+h1Element.addEventListener("click",()=>{
+    alert("Agora com super!")
+})
+
+// Altere a cor de fundo do elemento quando ocorrer a passagem do mouse sobre o elemento!
+// Coloque a cor de fundo na cor vermelha e a cor do texto na cor branca
+
+h1Element.addEventListener("mouseover", ()=>{
+
+    h1Element.style.backgroundColor = "#ff0000";
+    h1Element.style.color = "#fff";
+})
+
+h1Element.addEventListener("mouseout", ()=>{
+
+    h1Element.style.backgroundColor = "#fff";
+    h1Element.style.color = "#000000";
+})
