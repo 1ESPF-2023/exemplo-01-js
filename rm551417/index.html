@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplo JS</title>
     
-    <script src="./js/script.js"></script>
+    <script src="./js/script.js" defer></script>
 
 </head>
 <body>
@@ -19,9 +19,11 @@
         alert("Olá Mundo!")
     </script> -->
 
-    <h1 onclick="alert('Exemplo de evento inline!'), console.log('Exemplo de evento no log!')">
+    <!-- <h1 onclick="alert('Exemplo de evento inline!'), console.log('Exemplo de evento no log!')">
         Exemplo de eventos no javascript
-    </h1> <!-- alert não retorna nada *(não tem return)-->
+    </h1> --> <!-- alert não retorna nada *(não tem return)-->
+
+    <h1 id="meu-titulo">Exemplo de eventos no javascript</h1>
 
 </body>
 </html>
