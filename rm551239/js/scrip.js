@@ -11,18 +11,18 @@
 
 //Três tipos de dados iniciais do var
 //undefined
-var tipo1 
-//nulo
-var tipo2 = null
-//vazio
-var tipo3 =""
+// var tipo1 
+// //nulo
+// var tipo2 = null
+// //vazio
+// var tipo3 =""
 
-//Problemas ao declarar tudo com var
-var nome = "Miguel"
+// //Problemas ao declarar tudo com var
+// var nome = "Miguel"
 
-if(nome != ""){
-var nome = "Rony"
-}
-console.log("Nome: " + nome)
+// if(nome != ""){
+// var nome = "Rony"
+// }
+// console.log("Nome: " + nome)
     
 
