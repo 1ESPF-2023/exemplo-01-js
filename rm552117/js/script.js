@@ -26,8 +26,22 @@ if(nome!=""){
 
 console.log("Nome: "+nome)
 
-//CHECKPOINT!!!!!!!!!!!
-//Como declarar uma variável com valor undefined em JavaScript?Exemplifique e demonstre a saída do valor da variável.
-let variavel
-console.log(variavel)
 
+const h1element = document.getElementById("teste")
+
+//adicionar ou atrelar o movimento de click ao elemento
+
+document.addEventListener("click",()=>{
+    alert('Agora com alguma coisa ai')
+})
+//altere a cor de fundo do elemento quando ocorrer a passagem do mouse sobre o elemento, troque a cor de fundo na cor vermelha e a cor do texto na cor branca
+
+h1element.addEventListener("mouseover",()=>{
+    h1element.style.backgroundColor="#ff0000";
+    h1element.style.color="#fff";
+})
+
+h1element.addEventListener("mouseout",()=>{
+    h1element.style.backgroundColor="#fff";
+    h1element.style.color="#000000";
+})
