@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Exemplo Js </title>
-    <script src="./js/script.js"></script>
+    <script src="./js/script.js" defer></script>
+
+<!-- defer -> atributo para detectar scripts javascript e "travar" sua carga, para que a página carregue 
+corretamente (BOA PRÁTICA) -->
    
- 
  <!-- <script>
    alert("ola mundo!")
   </script> -->
@@ -16,8 +18,8 @@
 
 
 <body>
-    <h1 onclick="alert('Exemplo de evento in line'), console.log('Exemplo de evento no log')">Exemplo de eventos no Javascript</h1>
-
+    <!--<h1 onclick="alert('Exemplo de evento in line'), console.log('Exemplo de evento no log')">Exemplo de eventos no Javascript</h1> -->
+    <h1 id="meu-titulo">Exemplo de eventos no Javascript</h1>
 </body>
 
 </html>
