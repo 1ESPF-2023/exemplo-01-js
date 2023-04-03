@@ -15,17 +15,18 @@
 
 // tres tipos de dados iniciais do VAR
 // undefined
-var tipo1
+// var tipo1
 //Nulo
-var tipo2 = null
+// var tipo2 = null
 //Vazio
-var tipo3 = ""
+// var tipo3 = ""
 // problemas ao declarar tudo com VAR
-var nome = "Pedro"
+// var nome = "Pedro"
 
-if(nome != ""){
+// if(nome != ""){
 
-var nome = "Rony"
+// var nome = "Rony"
 
-}
-    console.log("NOME: " + nome)
+// }
+//     console.log("NOME: " + nome)
+
