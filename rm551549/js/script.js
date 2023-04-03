@@ -5,24 +5,90 @@
 
 // document.write("O valor da variável.")
 // document.write(nome)
-// //  Realizando uma concatenação
+// Realizando uma concatenação
 // document.write("NOME : " + nome)
 
-//  Três tipos de dados iniciais do var
-//Undefined
-var tipo1
+// A variavel "VAR" por ser global, ela sofre de Hoisting, fazendo ela ficar por cima de todas os outras.
 
-//Null
-var tipo2 = null
+// As variaveis "LET" e "CONST" são locais
 
-//Empty
-var tipo3 = ""
+// Três tipos de dados iniciais do var:
 
-//  Problemas ao declarar tudo com VAR
-var nome = "Pedro"
+// Undefined
+// var tipo1
 
-if(nome != ""){
-    let nome = "Rony"
-}
+// Null
+// var tipo2 = null
 
-console.log("NOME : " + nome);
+// Empty
+// var tipo3 = ""
+
+// var tipo4 = "Declarado."
+
+// Problemas ao declarar tudo com "VAR",é o fato dela sobreescrever as outras variaveis VAR.
+// var nome = "Pedro"
+
+// Dentro de escopo, no caso {}, nunca se usa VAR, apenas "LET" ou "CONST" se for objeto.
+// if(nome != ""){
+//     let nome = "Rony"
+// }
+
+// console.log("tipo1 : " + tipo1);
+// console.log("tipo2 : " + tipo2);
+// console.log("tipo3 : " + tipo3);
+// console.log("tipo4 : " + tipo4);
+
+/**
+Operadores Relacionais: 
+
+ =  / Operador de igual é de atribuição.
+ == / Operador de igual 2x é de igualdade.
+ != / Operador exclamação e igual é de diferença ou negaoção, ele inverte o resultado.
+ !  / Só a exclamação na frente ele da variavel, ela inverte para false.
+ >  / Operador maior, verifica se o valor da esquerda é maior do que o da direita.
+ <  / Operador menor, verifica se o valor da esquerda é menor do que o da direita.
+ >= / Operador maior ou igual, verifica se o valor da esquerda é maior ou igual do que o da direita.
+<=  / Operador menor ou igual, verifica se o valor da esquerda é menor ou igual do que o da direita.
+
+*/
+
+//Estrutura de decisão IF / SE
+
+// if (nome != "") {
+//     console.log("IF DE UMA LINHA COM ELSE"); 
+// }else{
+//     console.log("AQUI É O ELSE!!")
+// }
+
+/**
+ Utilização de operadores lógicos
+ && = e ou AND
+ || = ou ou OR
+ Para estes opreadores vamos utilizar também as estruturas de descisão incrementadas com else if
+
+ */
+
+// var nome = null
+// var sobreNome = null
+
+// if (!nome == "" && !sobreNome == "") {
+//     console.log("O nome está preeenchido!");
+// } else if ((nome == undefined && nome != null) && (sobreNome == undefined && sobreNome != null)) {
+//     console.log("O nome está indefinido!");
+// } else if (nome == null && sobreNome == null) {
+//     console.log("O nome está nulo!");
+// } else if (nome == "" && sobreNome == "") {
+//     console.log("O nome não foi preenchido!");
+// }else{
+//     console.log("Ocorreu um problema desconhecido!");
+// }
+
+// Operação TERNÁRIA. A função "?"
+var num1 = 10;
+var num2 = 5;
+var resultado
+
+// Utilizando o operação matemático (% de Módulo), vamos obter o resto da operação da divisão de num1 por num2, podendo descobrir se o número é par ou impar!
+resultado = !(num1%num2) ? "PAR" : "IMPAR";
+
+console.log("O valor calculado é :" + resultado);
