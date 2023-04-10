@@ -1,4 +1,4 @@
-// Executando um teste
+// Comentário de Linha
 /**
  * Comentário de Bloco
  */
