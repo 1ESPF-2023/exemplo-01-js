@@ -111,7 +111,50 @@ h1Element.addEventListener("click",()=>{
     h1Element.style.color = "#fff";
  })
 
- h1Element.addEventListener("mouseout",()=>{
+ h1Element.addEventListener("mouseout",function(){
     h1Element.style.backgroundColor = "#fff";
     h1Element.style.color = "#000000";
  })
+
+//  h1Element.addEventListener("mouseout",alteraCorFundo)
+
+//let msg = null;
+
+//    function enviaMsg(msg){     //nomear funções dessa forma
+
+//       //Parâmetro recebido e sendo verificado
+//       //SWITCH CASE
+
+//       const pElement = document.getElementById("p-msg");
+
+//       switch (msg) {
+//          case undefined:
+//             console.log("Foi enviada uma mensagem vazia!");
+//             pElement.textContent = "Foi enviada uma mensagem vazia!";
+//             break;
+//          case null:
+//             console.log("Foi enviada uma mensagem nula!");
+//             pElement.textContent = "Foi enviada uma mensagem nula!";
+//             return "Foi enviada uma mensagem nula"; //exemplo de return
+//          case "":
+//             console.log("Foi enviada uma mensagem em branco!");
+//             pElement.textContent = "Foi enviada uma mensagem em branco!";
+//             break;
+//          case "Bom dia":
+//             console.log("Bom dia");
+//             pElement.textContent = "Bom dia";
+//             break;
+//          default:
+//             console.error("Ocorreu um erro na transmissão!");
+//             pElement.textContent = "Ocorreu um erro na transmissão!";
+//             break;
+//       }
+
+//       return "SUCESSO!";
+//   }
+
+//    console.log("Esse é o retorno da minha função: " + enviaMsg(null));
+
+   //Diferença entre break e return:
+   //break = sai de dentro de um escopo menor
+   //return = sai do escopo total
