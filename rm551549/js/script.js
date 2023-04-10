@@ -110,8 +110,58 @@ h1Element.addEventListener("mouseover", ()=>{
     h1Element.style.color = "#fff";
 })
 
-h1Element.addEventListener("mouseout", ()=>{
+// h1Element.addEventListener("mouseout", ()=>{
 
+//     h1Element.style.backgroundColor = "#fff";
+//     h1Element.style.color = "#000000";
+// })
+
+// Altera cor de fundo com função!
+
+h1Element.addEventListener("mouseout", alteraCorFundo)
+
+function alteraCorFundo(){
     h1Element.style.backgroundColor = "#fff";
     h1Element.style.color = "#000000";
-})
+}
+
+// let msg = "Bom dia amigos!"
+
+//Função com SWTICH
+
+// function enviaMsg(msg){
+// //    h1Element.style.backgroundColor = "#fff";
+// //    h1Element.style.color = "#000000";
+
+//     //Parâmetro recebido e sendo verificado
+//     //SWITCH CASE - Estrutura de decisão
+
+//     const PElement = document.getElementById("p-msg");
+//     switch (msg) {
+//         case undefined:
+//             console.log("Foi enviada uma mensagem vazia!");
+//             PElement.textContent = "Foi enviada uma mensagem vazia!";
+//             return "Foi enviada uma mensagem vazia!";
+//         case null:
+//             console.log("Foi enviada nula!");
+//             PElement.textContent = "Foi enviada nula!";
+//             return "Foi enviada nula!";
+//         case "":
+//             console.log("Foi enviada em branco!");
+//             PElement.textContent = "Foi enviada em branco!";
+//             return "Foi enviada em branco!";
+//         case "Bom dia amigos!":
+//             console.log("Bom dia amigos!");
+//             PElement.textContent = "Bom dia amigos!";
+//             return "Bom dia amigos!";
+    
+//         default:
+//             console.error("Ocorreu um erro na transmissão!");
+//             PElement.textContent = "Ocorreu um erro transmissâo!";
+//             return "Ocorreu um erro na transmissão!";
+//     }
+// }
+// //enviaMsg(msg)
+
+// console.log("Esse é o retorno da minha função : " + enviaMsg(undefined));
+
