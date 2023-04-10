@@ -48,7 +48,50 @@ h1element.addEventListener("mouseover", ()=>{
     h1element.style.height = "50px";
 })
 
-h1element.addEventListener("mouseout", ()=>{
+// h1element.addEventListener("mouseout", ()=>{
+//     h1element.style.backgroundColor = "#fff";
+//     h1element.style.color = "#000000";
+// })
+
+h1element.addEventListener("mouseout", alteraCorFundo)
+function alteraCorFundo(){
     h1element.style.backgroundColor = "#fff";
     h1element.style.color = "#000000";
-})
+}
+
+const pelement = document.getElementById("p-msg");
+let msg = null
+pelement.addEventListener("mouseout", enviaMsg)
+function enviaMsg(msg){
+//Parametro recebido e sendo verificado
+//SWITCH CASE
+
+
+    switch (msg) {
+        case undefined:
+            console.log("Foi enviada uma msg vazia!");
+            pelement.textContent = "Foi enviada uma msg vazia!";
+            return "Foi enviada uma msg vazia!";
+        case null:
+            console.log("Foi enviada uma msg nula!");
+            pelement.textContent = "Foi enviada uma msg nula!";
+            return "Foi enviada uma nula!";
+        case "":
+            console.log("Foi enviada uma msg em branco!");
+            pelement.textContent = "Foi enviada uma msg em branco!";
+            return "Foi enviada uma msg em branco";             
+        case "Bom dia amigos!":
+            console.log("Bom dia amigos!");
+            pelement.textContent = "Bom dia amigos!";
+            return "Bom dia amigos!";  
+        default:
+            console.error("Ocorreu um erro na transmissao");
+            pelement.textContent = "Ocorreu um erro na transmissao";
+            return "Ocorreu um erro na transmissao";
+            
+    }
+}
+console.log("Esse é o retorno da minha função: " + enviaMsg(undefined));
+enviaMsg(msg)
+
+
