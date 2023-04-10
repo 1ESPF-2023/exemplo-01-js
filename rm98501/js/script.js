@@ -54,5 +54,5 @@ function enviaMsg(msg) {
     return "SUCESSO!";
 }
 
-console.log("Esse é o retorno: " + enviaMsg(null))
+console.log("Esse é o retorno: " + enviaMsg(null));
 
