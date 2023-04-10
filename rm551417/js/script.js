@@ -91,25 +91,70 @@ Operadores Relacionais:
 // console.log("O valor calculado é :" + resultado);
 
 // CAPTURAR O ELEMENTO ATRAVÉS DO ID UTILIZANDO UMA FUNÇÃO DO DOM
-const h1Element = document.getElementById("meu-titulo");
+// const h1Element = document.getElementById("meu-titulo");
 
-// Atrelar ou adicionar o evento de click do mouse ao elemento.
-h1Element.addEventListener("click",()=>{
-    alert("Agora com super!")
-})
+// // Atrelar ou adicionar o evento de click do mouse ao elemento.
+// h1Element.addEventListener("click",()=>{
+//     alert("Agora com super!")
+// })
 
 // Altere a cor de fundo do elemento quando ocorrer a passagem do mouse sobre o elemento!
 // Coloque a cor de fundo na cor vermelha e a cor do texto na cor branca
 
-h1Element.addEventListener("mouseover", ()=>{
+// h1Element.addEventListener("mouseover", ()=>{
 
-    h1Element.style.backgroundColor = "#ff0000";
-    h1Element.style.color = "#fff";
-})
+//     h1Element.style.backgroundColor = "#ff0000";
+//     h1Element.style.color = "#fff";
+// })
 
-h1Element.addEventListener("mouseout", ()=>{
+// h1Element.addEventListener("mouseout", ()=>{
 
-    h1Element.style.backgroundColor = "#fff";
-    h1Element.style.color = "#000000";
-})
+//     h1Element.style.backgroundColor = "#fff";
+//     h1Element.style.color = "#000000";
+// })
 
+// h1Element.addEventListener("mouseout",alteraCorFundo)
+
+// let msg = "Fome";
+
+// function enviaMsg(msg){
+    // h1Element.style.backgroundColor = "#fff";
+    // h1Element.style.color = "#000000";
+
+    // Parâmetro recebido e sendo verificado
+    // SWITCH CASE
+
+    // const pElement = document.getElementById("p-msg")
+
+    // switch (msg) {
+    //     case undefined:
+    //         console.log("Foi enviada uma mensagem vazia!")
+    //         pElement.textContent = "Foi enviada uma mensagem vazia!"
+    //         return "Vazio";
+
+    //     case "":
+    //         console.log("Foi enviada uma mensagem em branco!")
+    //         pElement.textContent = "Foi enviada uma mensagem em branco!"
+    //         return "Branco";
+
+    //     case null:
+    //         console.log("Foi enviada nula!")
+    //         pElement.textContent = "Foi enviada nula!"
+    //         return "Nula";
+
+    //     case "Fome":
+    //         console.log("TO COM FOME KRAI!")
+    //         pElement.textContent = "TO COM FOME KRAI!"
+    //         return "Por favor, me de comida!";
+
+    //     default:
+    //         console.error("Ocorreu um erro na transmissão!")
+    //         pElement.textContent = "Ocorreu um erro na transmissão!"
+    //         return "Erro";
+    // }
+
+    //return "Por favor, me de comida!"
+
+// }
+
+// console.log("Esse é o retorno da minha função: " + enviaMsg("Fome"))
