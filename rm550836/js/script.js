@@ -1,3 +1,4 @@
+
 //Executando um teste
 
 //Declarando uma variável e visualizando seu conteúdo.
@@ -77,6 +78,3 @@ var resultado;
 resultado = !(num1 % num2) ? "par" : "ímpar";
 
 console.log(`O valor calculado é ${resultado}.`)
-
-
-
