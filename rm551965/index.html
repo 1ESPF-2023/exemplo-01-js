@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo Js</title>
+    <title>Exemplo js</title>
 
 
-<script src="./js/script.js"> </script>
+<script src="./js/script.js" defer> </script>
 
 
 </head>
-<body>
 
-    <a href="https://www.fiap.com.br">FIAP</a>
+<body onload= "enviaMsg ('Bom dia galera')">
+
+    <h1 id="meu-titulo" onmouseout= "enviaMsg()">Exemplo de eventos no javascrip</h1>
+
+<div> <p id="p-msg">Parametro da function :</p> </div>
 
 </body>
+
 </html>
