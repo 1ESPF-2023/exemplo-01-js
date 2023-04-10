@@ -1,4 +1,4 @@
-//Executando um teste
+//Executando um teste //
 
 //Declarando uma variável e visualizando seu conteúdo.
 var nome = "Ricardo"

@@ -1,4 +1,4 @@
-//Capturar o elemento através do id utilizando uma função do dom
+//Capturar o elemento através do id utilizando uma função do dom //
 
 const h1Element = document.getElementById("meu-titulo");
 

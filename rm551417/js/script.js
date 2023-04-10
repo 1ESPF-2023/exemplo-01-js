@@ -52,4 +52,4 @@ h1Element.addEventListener("mouseover",()=>{
 h1Element.addEventListener("mouseout",()=>{
     h1Element.style.backgroundColor = "#ffffff";
     h1Element.style.color = "#000000";
-})
+}) //
