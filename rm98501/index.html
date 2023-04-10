@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplp JS</title>
 
-     <script src="./js/script.js"></script> 
+     <script src="./js/script.js" defer></script> 
 
 
 </head>
-<body>
+<body onload="enviaMsg('Bom dia amigos')">
     
-    <h1 onclick="alert('Exemplo de evento inline!'), console.log('Exemplo de evento no log')">Exemplo de events no Javascript</h1>
+   <h1 id="meu_titulo">Exemplo JS</h1>
+
+   <div>
+    <p id="p-msg">Parâmetro da function:</p>
+   </div>
 
 </body>
 </html>
