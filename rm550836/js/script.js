@@ -1,4 +1,3 @@
-
 //Executando um teste
 
 //Declarando uma variável e visualizando seu conteúdo.
