@@ -24,23 +24,23 @@
 // }
 // console.log("nome:" + nome)
 
-const h1element = document.getElementById("meu-titulo")
+// const h1element = document.getElementById("meu-titulo")
 
 //atrelar o evento de click do mouse ao elemento
 
-h1element.addEventListener("click" , ()=>{
-        alert("agora com super poderes")
+// h1element.addEventListener("click" , ()=>{
+//         alert("agora com super poderes")
 
-})
+// })
 
 //altere a cor de fundo do elemento quando ocorrer a passagem de mouse sobre o elemento
 //coloque a cor de fundo na cor vermelha e a cor do texto na cor branca
 
 
-h1element.addEventListener("mouseover",()=>{
-        h1element.style.backgroundColor = "#ff0000" ;
-        h1element.style.color = "#fff" ;
-})
+// h1element.addEventListener("mouseover",()=>{
+//         h1element.style.backgroundColor = "#ff0000" ;
+//         h1element.style.color = "#fff" ;
+// })
 
 
 // h1element.addEventListener("mouseout",()=>{
@@ -52,12 +52,12 @@ h1element.addEventListener("mouseover",()=>{
 
 // let msg = "bom dia amigos"
 
-function enviaMsg(msg){
+// function enviaMsg(msg){
         
         //parametro recebido e sendo verificado
         //switch case
         
-        const pElement = document.getElementById("p-msg");
+        // const pElement = document.getElementById("p-msg");
         
 //         switch (msg) {
 //                 case undefined:
