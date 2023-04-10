@@ -36,12 +36,42 @@ document.addEventListener("click",()=>{
 })
 //altere a cor de fundo do elemento quando ocorrer a passagem do mouse sobre o elemento, troque a cor de fundo na cor vermelha e a cor do texto na cor branca
 
-h1element.addEventListener("mouseover",()=>{
-    h1element.style.backgroundColor="#ff0000";
-    h1element.style.color="#fff";
-})
+//h1element.addEventListener("mouseover",()=>{
+//    h1element.style.backgroundColor="#ff0000";
+//    h1element.style.color="#fff";
+//})
 
-h1element.addEventListener("mouseout",()=>{
-    h1element.style.backgroundColor="#fff";
-    h1element.style.color="#000000";
-})
+//h1element.addEventListener("mouseout", alteraCorFundo)
+
+let msg= "Bom dia!"
+
+function enviaMsg(msg){
+    //Parâmetro
+    //switch case!
+    const pElement =document.getElementById("p-msg")
+
+    switch (msg) {
+        case undefined:
+            console.log("Foi enviada uma mensagem vazia")
+            pElement.textContent=("Foi enviada uma mensagem vazia")
+            break;
+        case null:
+            console.log("Foi enviada nula!")
+            pElement.textContent=("Foi enviada nula")
+            break;
+        case "":
+            console.log("Foi enviada em branco")
+            pElement.textContent=("Foi enviada uma mensagem vazia")
+            break;
+        case "Bom dia!":
+            console.log("Bom dia!")
+            pElement.textContent=("Bom dia!")
+            break;
+        default:
+            console.error("Ocorreu um erro na transmissão")
+            pElement.textContent=("Ocorreu um erro na transmissão")
+            break;
+    }
+}
+console.log("Esse é o retorno da minha função :" + enviaMsg(msg))
+enviaMsg(msg)
