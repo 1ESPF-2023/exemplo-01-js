@@ -78,3 +78,5 @@ var resultado;
 resultado = !(num1 % num2) ? "par" : "ímpar";
 
 console.log(`O valor calculado é ${resultado}.`)
+
+// teste
