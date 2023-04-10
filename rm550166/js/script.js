@@ -43,10 +43,50 @@ h1element.addEventListener("mouseover",()=>{
 })
 
 
-h1element.addEventListener("mouseout",()=>{
-        h1element.style.backgroundColor = "#fff" ;
-        h1element.style.color = "#000000" ;
-})
+// h1element.addEventListener("mouseout",()=>{
+//         h1element.style.backgroundColor = "#fff" ;
+//         h1element.style.color = "#000000" ;
+// })
+
+// h1element.addEventListener("mouseout",alteraCorFundo)
+
+// let msg = "bom dia amigos"
+
+function enviaMsg(msg){
+        
+        //parametro recebido e sendo verificado
+        //switch case
+        
+        const pElement = document.getElementById("p-msg");
+        
+//         switch (msg) {
+//                 case undefined:
+//                         console.log("foi enviada uma mensagem indefinida");
+//                         pElement.textContent = "foi enviada uma mensagem indefinida";
+                        
+//                         return "foi enviada uma mensagem indefinida";
+//                  case null:
+//                                 console.log("foi enviada uma mensagem em branco");
+//                                 pElement.textContent= "foi enviada uma mensagem em branco";
+//                         return "foi enviada uma mensagem em branco";
+//                  case "":
+//                         console.log("foi enviada uma mensagem vazia");
+//                         pElement.textContent = "foi enviada uma mensagem vazia";
+//                         return "foi enviada uma mensagem vazia";
+//                  case "bom dia amigos":
+//                         console.log("bom dia amigos");
+//                         pElement.textContent = "bom dia amigos";
+//                         return "bom dia amigos";
+//                 default:
+//                         console.error("ocorreu um erro na transmissao");
+//                         pElement.textContent = "ocorreu um erro na transmissao";
+//                         return "ocorreu um erro na transmissao";
+//         }
+//         return "SUCESSO!"
+// }
+// console.log("esse e o retorno da minha funcao:" + enviaMsg(""));
+
+// enviaMsg(msg)
 
 
 
