@@ -1,55 +1,161 @@
-// //Executando um teste.
+//  Executando um teste
 
-// //Declarando uma variável e visualizando seu conteúdo.
-// // var nome = "Tomáz"
+//  Declarando uma variável e visualizando seu conteúdo.
+// var nome = "Rony"
 
-// // document.write("O valor da variável é:")
-// // document.write("<br>")
-// // //Realizando uma concatenação.
-// // document.write("Nome: " + nome)
+// document.write("O valor da variável.")
+// document.write(nome)
+// Realizando uma concatenação
+// document.write("NOME : " + nome)
 
-// //Três tipos de dados iniciais do var
-// //undefined
+// A variavel "VAR" por ser global, ela sofre de Hoisting, fazendo ela ficar por cima de todas os outras.
+
+// As variaveis "LET" e "CONST" são locais
+
+// Três tipos de dados iniciais do var:
+
+// Undefined
 // var tipo1
-// //null
+
+// Null
 // var tipo2 = null
-// //vazio
+
+// Empty
 // var tipo3 = ""
 
-// //Problemas ao declarar tudo com var
-// var nome = "Tomáz"
+// var tipo4 = "Declarado."
 
+// Problemas ao declarar tudo com "VAR",é o fato dela sobreescrever as outras variaveis VAR.
+// var nome = "Pedro"
+
+// Dentro de escopo, no caso {}, nunca se usa VAR, apenas "LET" ou "CONST" se for objeto.
 // if(nome != ""){
 //     let nome = "Rony"
 // }
 
-// console.log("Nome: " + nome)
+// console.log("tipo1 : " + tipo1);
+// console.log("tipo2 : " + tipo2);
+// console.log("tipo3 : " + tipo3);
+// console.log("tipo4 : " + tipo4);
 
-// /*1 -Como declarar uma variável com valor undefined em JavaScript?
-// Exemplifique e demonstre a saída do valor da variável!*/
+/**
+Operadores Relacionais: 
+ =  / Operador de igual é de atribuição.
+ == / Operador de igual 2x é de igualdade.
+ != / Operador exclamação e igual é de diferença ou negaoção, ele inverte o resultado.
+ !  / Só a exclamação na frente ele da variavel, ela inverte para false.
+ >  / Operador maior, verifica se o valor da esquerda é maior do que o da direita.
+ <  / Operador menor, verifica se o valor da esquerda é menor do que o da direita.
+ >= / Operador maior ou igual, verifica se o valor da esquerda é maior ou igual do que o da direita.
+<=  / Operador menor ou igual, verifica se o valor da esquerda é menor ou igual do que o da direita.
+*/
 
-// let variavel
-// console.log("Valor da variável " + variavel)
+//Estrutura de decisão IF / SE
+
+// if (nome != "") {
+//     console.log("IF DE UMA LINHA COM ELSE"); 
+// }else{
+//     console.log("AQUI É O ELSE!!")
+// }
+
+/**
+ Utilização de operadores lógicos
+ && = e ou AND
+ || = ou ou OR
+ Para estes opreadores vamos utilizar também as estruturas de descisão incrementadas com else if
+ */
+
+// var nome = null
+// var sobreNome = null
+
+// if (!nome == "" && !sobreNome == "") {
+//     console.log("O nome está preeenchido!");
+// } else if ((nome == undefined && nome != null) && (sobreNome == undefined && sobreNome != null)) {
+//     console.log("O nome está indefinido!");
+// } else if (nome == null && sobreNome == null) {
+//     console.log("O nome está nulo!");
+// } else if (nome == "" && sobreNome == "") {
+//     console.log("O nome não foi preenchido!");
+// }else{
+//     console.log("Ocorreu um problema desconhecido!");
+// }
+
+// Operação TERNÁRIA. A função "?"
+// var num1 = 10;
+// var num2 = 5;
+// var resultado
+
+// Utilizando o operação matemático (% de Módulo), vamos obter o resto da operação da divisão de num1 por num2, podendo descobrir se o número é par ou impar!
+// resultado = !(num1%num2) ? "PAR" : "IMPAR";
 
 
+// console.log("O valor calculado é :" + resultado);
 
-//Capturar o elemento através do ID utilizando uma função do DOM (document pertence ao DOM)
-const h1Element = document.getElementById("meu-titulo");
+// CAPTURAR O ELEMENTO ATRAVÉS DO ID UTILIZANDO UMA FUNÇÃO DO DOM
+// const h1Element = document.getElementById("meu-titulo");
 
-//Atrelar ou adicionar o evento de click do mouse ao elemento.
-h1Element.addEventListener("click",()=>{
-    alert("Agora com superpoderes!")
-})
+// // Atrelar ou adicionar o evento de click do mouse ao elemento.
+// h1Element.addEventListener("click",()=>{
+//     alert("Agora com super!")
+// })
 
-//Altere a cor de fundo do elemento quando ocorrer a passagem do mouse sobre o elemento!
-//Coloque a cor de fundo na cor vermelha e a cor do texto na cor branca.
+// Altere a cor de fundo do elemento quando ocorrer a passagem do mouse sobre o elemento!
+// Coloque a cor de fundo na cor vermelha e a cor do texto na cor branca
 
-h1Element.addEventListener("mouseover",()=>{
-    h1Element.style.backgroundColor = "#ff0000";
-    h1Element.style.color = "#ffffff";
-})
+// h1Element.addEventListener("mouseover", ()=>{
 
-h1Element.addEventListener("mouseout",()=>{
-    h1Element.style.backgroundColor = "#ffffff";
-    h1Element.style.color = "#000000";
-}) //
+//     h1Element.style.backgroundColor = "#ff0000";
+//     h1Element.style.color = "#fff";
+// })
+
+// h1Element.addEventListener("mouseout", ()=>{
+
+//     h1Element.style.backgroundColor = "#fff";
+//     h1Element.style.color = "#000000";
+// })
+
+// h1Element.addEventListener("mouseout",alteraCorFundo)
+
+// let msg = "Fome";
+
+// function enviaMsg(msg){
+    // h1Element.style.backgroundColor = "#fff";
+    // h1Element.style.color = "#000000";
+
+    // Parâmetro recebido e sendo verificado
+    // SWITCH CASE
+
+    // const pElement = document.getElementById("p-msg")
+
+    // switch (msg) {
+    //     case undefined:
+    //         console.log("Foi enviada uma mensagem vazia!")
+    //         pElement.textContent = "Foi enviada uma mensagem vazia!"
+    //         return "Vazio";
+
+    //     case "":
+    //         console.log("Foi enviada uma mensagem em branco!")
+    //         pElement.textContent = "Foi enviada uma mensagem em branco!"
+    //         return "Branco";
+
+    //     case null:
+    //         console.log("Foi enviada nula!")
+    //         pElement.textContent = "Foi enviada nula!"
+    //         return "Nula";
+
+    //     case "Fome":
+    //         console.log("TO COM FOME KRAI!")
+    //         pElement.textContent = "TO COM FOME KRAI!"
+    //         return "Por favor, me de comida!";
+
+    //     default:
+    //         console.error("Ocorreu um erro na transmissão!")
+    //         pElement.textContent = "Ocorreu um erro na transmissão!"
+    //         return "Erro";
+    // }
+
+    //return "Por favor, me de comida!"
+
+// }
+
+// console.log("Esse é o retorno da minha função: " + enviaMsg("Fome"))
